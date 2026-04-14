@@ -1,0 +1,8 @@
+# Ignore installed dependencies for each standalone chapter project.
+**/node_modules/
+
+# Ignore generated build output for each standalone chapter project.
+**/dist/
+
+# Ignore macOS Finder metadata files anywhere in the repo.
+.DS_Store

@@ -1,0 +1,24 @@
+{
+  "name": "ch06-dev-workflow",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Chapter 6 of the Webpack + Babel learning path.",
+  "scripts": {
+    "dev": "webpack serve --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
+    "config:test": "webpack configtest webpack.dev.js && webpack configtest webpack.prod.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.29.0",
+    "@babel/preset-env": "^7.29.2",
+    "@babel/preset-typescript": "^7.28.5",
+    "babel-loader": "^10.1.1",
+    "html-webpack-plugin": "^5.6.6",
+    "typescript": "^6.0.2",
+    "webpack": "^5.106.1",
+    "webpack-cli": "^7.0.2",
+    "webpack-dev-server": "^5.2.3",
+    "webpack-merge": "^6.0.1"
+  }
+}

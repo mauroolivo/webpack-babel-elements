@@ -1,0 +1,146 @@
+.gallery-shell {
+  width: min(1080px, calc(100vw - 2rem));
+  margin: 0 auto;
+  padding: 2.5rem 0 4rem;
+}
+
+.gallery-header {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.gallery-kicker {
+  margin: 0;
+  font-size: 0.78rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #5d5142;
+}
+
+.gallery-title {
+  margin: 0;
+  font-size: clamp(2.4rem, 5vw, 4.8rem);
+  line-height: 0.95;
+  max-width: 10ch;
+}
+
+.gallery-summary {
+  margin: 0;
+  max-width: 60ch;
+  font-size: 1.02rem;
+  line-height: 1.7;
+  color: #4a433b;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.theme-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.35rem;
+  border: 1px solid rgba(76, 68, 57, 0.12);
+  background: rgba(255, 252, 246, 0.86);
+  box-shadow: 0 18px 42px rgba(35, 28, 22, 0.09);
+}
+
+.theme-card__texture {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background: #d9d4cb;
+}
+
+.theme-card__body {
+  padding: 1.1rem 1.1rem 1.2rem;
+}
+
+.theme-card__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.85rem;
+}
+
+.theme-card__name {
+  margin: 0;
+  font-size: 1.15rem;
+}
+
+.theme-card__swatches {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.theme-card__swatch {
+  width: 0.95rem;
+  height: 0.95rem;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.theme-card__copy {
+  margin: 0 0 1rem;
+  color: #544a40;
+  line-height: 1.6;
+}
+
+.theme-card__meta {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: #66594b;
+  font-size: 0.92rem;
+}
+
+.theme-card__inline-icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.loader-notes {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+}
+
+.loader-panel,
+.notes-panel {
+  border-radius: 1.2rem;
+  border: 1px solid rgba(76, 68, 57, 0.12);
+  background: rgba(255, 252, 246, 0.78);
+  padding: 1.15rem;
+}
+
+.loader-panel h2,
+.notes-panel h2 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+}
+
+.loader-panel ul {
+  margin: 0;
+  padding-left: 1.15rem;
+  line-height: 1.7;
+}
+
+.notes-panel pre {
+  margin: 0;
+  white-space: pre-wrap;
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 760px) {
+  .loader-notes {
+    grid-template-columns: 1fr;
+  }
+}

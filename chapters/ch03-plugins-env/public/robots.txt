@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+# Copied into dist by CopyWebpackPlugin

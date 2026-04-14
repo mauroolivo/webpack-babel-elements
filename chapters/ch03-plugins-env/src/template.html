@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="<%= appEnv %> dashboard showing how HtmlWebpackPlugin and DefinePlugin work together."
+    />
+    <title><%= pageTitle %></title>
+    <style>
+      :root {
+        color-scheme: light;
+        font-family: "Baskerville", "Times New Roman", serif;
+        background:
+          radial-gradient(circle at top left, rgba(225, 201, 165, 0.42), transparent 34%),
+          linear-gradient(160deg, #f5efe5 0%, #e9dfcf 54%, #f8f3eb 100%);
+        color: #1d1913;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+      }
+
+      #app {
+        min-height: 100vh;
+      }
+    </style>
+  </head>
+  <body data-app-env="<%= appEnv %>" data-release-channel="<%= releaseChannel %>">
+    <main id="app"></main>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "ch02-loaders-assets",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Chapter 2 of the Webpack + Babel learning path.",
+  "scripts": {
+    "build": "webpack --mode development",
+    "watch": "webpack --mode development --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.29.0",
+    "@babel/preset-env": "^7.29.2",
+    "@babel/preset-typescript": "^7.28.5",
+    "babel-loader": "^10.1.1",
+    "css-loader": "^7.1.4",
+    "style-loader": "^4.0.0",
+    "typescript": "^6.0.2",
+    "webpack": "^5.106.1",
+    "webpack-cli": "^7.0.2"
+  }
+}

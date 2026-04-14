@@ -1,0 +1,7 @@
+asset/resource => emits a real file into dist/assets and returns its public URL.
+asset/inline => embeds the file contents into the JavaScript bundle as a data URI string.
+asset/source => imports the raw file content as text.
+
+CSS loader chain in this chapter:
+1. css-loader reads the CSS import and turns it into a JavaScript module.
+2. style-loader injects the resulting styles into the page at runtime.
