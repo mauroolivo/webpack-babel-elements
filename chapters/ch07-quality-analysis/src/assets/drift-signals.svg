@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Another deliberately verbose SVG so the optimization step has obvious work to do. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 900" role="img" aria-labelledby="title desc">
+  <title id="title">Drift Signals Poster</title>
+  <desc id="desc">Diagonal ribbons with bright markers for the podcast entry.</desc>
+  <metadata>
+    chapter=07
+    asset=drift-signals
+    kind=poster
+    note=This file includes comments, metadata, and repeated spacing that SVGO can compress.
+  </metadata>
+  <defs>
+    <linearGradient id="drift-background" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#221B3A" />
+      <stop offset="50%" stop-color="#4A3575" />
+      <stop offset="100%" stop-color="#F29C6B" />
+    </linearGradient>
+    <linearGradient id="drift-ribbon" x1="0%" x2="100%" y1="0%" y2="0%">
+      <stop offset="0%" stop-color="#FCE8C8" stop-opacity="0.92" />
+      <stop offset="100%" stop-color="#FFF9EF" stop-opacity="0.12" />
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="900" fill="url(#drift-background)" />
+
+  <g opacity="0.18" stroke="#FFF6E7" stroke-width="1.4">
+    <path d="M100 0V900" />
+    <path d="M220 0V900" />
+    <path d="M340 0V900" />
+    <path d="M460 0V900" />
+    <path d="M580 0V900" />
+  </g>
+
+  <g fill="none" stroke="url(#drift-ribbon)" stroke-linecap="round">
+    <path d="M-90 180C110 90 206 356 414 238S660 196 760 108" stroke-width="30" />
+    <path d="M-80 308C128 210 250 476 438 364S664 332 752 272" stroke-width="18" />
+    <path d="M-110 468C84 358 216 624 422 518S660 486 770 414" stroke-width="26" />
+    <path d="M-92 650C126 562 238 806 432 718S674 674 754 604" stroke-width="14" />
+  </g>
+
+  <g fill="#FCEFD8">
+    <circle cx="154" cy="212" r="12" />
+    <circle cx="246" cy="334" r="10" />
+    <circle cx="360" cy="486" r="13" />
+    <circle cx="470" cy="624" r="11" />
+  </g>
+
+  <g fill="#FFF7E8">
+    <text x="52" y="116" font-family="Georgia, serif" font-size="34" letter-spacing="5">DRIFT SIGNALS</text>
+    <text x="52" y="152" font-family="Avenir Next, sans-serif" font-size="16" letter-spacing="6">PODCAST REVIEW QUEUE</text>
+    <text x="52" y="836" font-family="Avenir Next, sans-serif" font-size="14" letter-spacing="4">SEARCH INDEX READY / CHAPTER 07</text>
+  </g>
+</svg>

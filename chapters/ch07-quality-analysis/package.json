@@ -1,0 +1,35 @@
+{
+  "name": "ch07-quality-analysis",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Chapter 7 of the Webpack + Babel learning path.",
+  "scripts": {
+    "build": "webpack --config webpack.config.js --mode production",
+    "build:dev": "webpack --config webpack.config.js --mode development",
+    "analyze": "webpack --config webpack.config.js --mode production --env analyze=true",
+    "config:test": "webpack configtest webpack.config.js",
+    "test": "jest --runInBand",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "fuse.js": "^7.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.29.0",
+    "@babel/preset-env": "^7.29.2",
+    "@babel/preset-typescript": "^7.28.5",
+    "@types/jest": "^29.5.14",
+    "babel-jest": "^29.7.0",
+    "babel-loader": "^10.1.1",
+    "css-loader": "^7.1.4",
+    "html-webpack-plugin": "^5.6.6",
+    "image-minimizer-webpack-plugin": "^5.0.0",
+    "jest": "^29.7.0",
+    "style-loader": "^4.0.0",
+    "svgo": "^4.0.1",
+    "typescript": "^6.0.2",
+    "webpack": "^5.106.1",
+    "webpack-bundle-analyzer": "^5.3.0",
+    "webpack-cli": "^7.0.2"
+  }
+}

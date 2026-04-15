@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Poster with extra labels and whitespace to make production minification easy to verify. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 900" role="img" aria-labelledby="title desc">
+  <title id="title">Archive Glossary Poster</title>
+  <desc id="desc">Stacked cards and labels for the guide entry.</desc>
+  <metadata>
+    chapter=07
+    asset=archive-glossary
+    kind=poster
+    note=Production build should reduce this file significantly by removing descriptive overhead.
+  </metadata>
+  <defs>
+    <linearGradient id="archive-background" x1="0%" x2="0%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#F2E8D5" />
+      <stop offset="100%" stop-color="#D0B893" />
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="900" fill="url(#archive-background)" />
+  <rect x="72" y="122" width="496" height="656" rx="34" fill="#FCF7ED" opacity="0.92" />
+
+  <g fill="#18324A">
+    <text x="108" y="204" font-family="Georgia, serif" font-size="34" letter-spacing="4">ARCHIVE GLOSSARY</text>
+    <text x="108" y="244" font-family="Avenir Next, sans-serif" font-size="16" letter-spacing="6">FIELD LABELING GUIDE</text>
+  </g>
+
+  <g>
+    <rect x="108" y="304" width="424" height="92" rx="22" fill="#E9D7BD" />
+    <rect x="108" y="432" width="424" height="92" rx="22" fill="#D7E2E8" />
+    <rect x="108" y="560" width="424" height="92" rx="22" fill="#F2D6C2" />
+  </g>
+
+  <g fill="#24435B">
+    <text x="136" y="346" font-family="Avenir Next, sans-serif" font-size="17" letter-spacing="3">STATUS MARKERS</text>
+    <text x="136" y="372" font-family="Georgia, serif" font-size="22">Ready / Review / Missing</text>
+
+    <text x="136" y="474" font-family="Avenir Next, sans-serif" font-size="17" letter-spacing="3">QUALITY LANGUAGE</text>
+    <text x="136" y="500" font-family="Georgia, serif" font-size="22">Stable / Needs Attention</text>
+
+    <text x="136" y="602" font-family="Avenir Next, sans-serif" font-size="17" letter-spacing="3">PACKAGING NOTES</text>
+    <text x="136" y="628" font-family="Georgia, serif" font-size="22">Bundle / Asset / Source</text>
+  </g>
+
+  <text x="108" y="744" font-family="Avenir Next, sans-serif" font-size="14" letter-spacing="4" fill="#4E6272">SVG SOURCE WITH REDUNDANT SPACING FOR CHAPTER 07</text>
+</svg>

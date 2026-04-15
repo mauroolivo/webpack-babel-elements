@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Source poster for a catalog item that still needs attention. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 900" role="img" aria-labelledby="title desc">
+  <title id="title">Field Mix Poster</title>
+  <desc id="desc">Layered terrain shapes with a missing preview callout.</desc>
+  <metadata>
+    chapter=07
+    asset=field-mix
+    kind=poster
+    note=Verbose layout keeps the source intentionally noisy for optimization demos.
+  </metadata>
+  <defs>
+    <linearGradient id="field-background" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#2A3B2F" />
+      <stop offset="56%" stop-color="#5B6E4E" />
+      <stop offset="100%" stop-color="#D7A269" />
+    </linearGradient>
+  </defs>
+
+  <rect width="640" height="900" fill="url(#field-background)" />
+
+  <path d="M0 670C122 602 220 618 304 664S506 726 640 666V900H0Z" fill="#DDBA8D" opacity="0.85" />
+  <path d="M0 734C134 694 236 742 338 768S532 806 640 760V900H0Z" fill="#F0DEC2" opacity="0.86" />
+  <path d="M0 560C76 496 182 504 280 560S470 628 640 560V900H0Z" fill="#9AB090" opacity="0.54" />
+
+  <g fill="#FFF4E1">
+    <text x="50" y="116" font-family="Georgia, serif" font-size="34" letter-spacing="5">FIELD MIX</text>
+    <text x="50" y="152" font-family="Avenir Next, sans-serif" font-size="16" letter-spacing="6">PREVIEW STILL MISSING</text>
+  </g>
+
+  <g transform="translate(86 252)">
+    <rect width="468" height="214" rx="28" fill="#FFF8EF" opacity="0.18" />
+    <rect x="28" y="28" width="412" height="158" rx="18" fill="#FFF8EF" opacity="0.12" stroke="#FFF0D6" stroke-width="2" stroke-dasharray="16 12" />
+    <text x="234" y="108" text-anchor="middle" font-family="Avenir Next, sans-serif" font-size="22" letter-spacing="5" fill="#FFF4E1">MISSING PREVIEW FRAME</text>
+    <text x="234" y="142" text-anchor="middle" font-family="Georgia, serif" font-size="28" fill="#FFF4E1">Needs a new exported poster image</text>
+  </g>
+
+  <text x="50" y="842" font-family="Avenir Next, sans-serif" font-size="14" letter-spacing="4" fill="#FFF4E1">PRODUCTION SVG OPTIMIZATION SHOULD TRIM THIS SOURCE FILE</text>
+</svg>
