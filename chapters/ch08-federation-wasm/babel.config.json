@@ -1,0 +1,17 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": "defaults",
+        "bugfixes": true
+      }
+    ],
+    [
+      "@babel/preset-typescript",
+      {
+        "allowDeclareFields": true
+      }
+    ]
+  ]
+}

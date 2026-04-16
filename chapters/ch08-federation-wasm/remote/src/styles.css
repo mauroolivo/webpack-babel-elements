@@ -1,0 +1,86 @@
+:root {
+  color-scheme: light;
+  --bg: #f5efe6;
+  --panel: rgba(255, 251, 245, 0.92);
+  --ink: #1f2a35;
+  --muted: #5a6673;
+  --accent: #7a3f1d;
+  --line: rgba(31, 42, 53, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Avenir Next', 'Trebuchet MS', sans-serif;
+  color: var(--ink);
+  background: linear-gradient(180deg, #f7f1e7 0%, #eee3d4 100%);
+}
+
+#app {
+  width: min(920px, calc(100vw - 2rem));
+  margin: 0 auto;
+  padding: 2rem 0 3rem;
+}
+
+.remote-page,
+.remote-hero,
+.remote-preview,
+.remote-card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  box-shadow: 0 18px 40px rgba(41, 31, 17, 0.1);
+}
+
+.remote-page {
+  display: grid;
+  gap: 1rem;
+  border: 0;
+  box-shadow: none;
+  background: transparent;
+}
+
+.remote-hero,
+.remote-preview {
+  border-radius: 24px;
+  padding: 1.2rem;
+}
+
+.eyebrow {
+  margin: 0 0 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.74rem;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+h1 {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(2.1rem, 4vw, 3.5rem);
+  line-height: 0.95;
+}
+
+.lead,
+.remote-card span,
+.remote-card small {
+  color: var(--muted);
+}
+
+.remote-card {
+  display: grid;
+  gap: 0.35rem;
+  padding: 1rem;
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(122, 63, 29, 0.08), rgba(122, 63, 29, 0.02));
+  border: 1px solid rgba(122, 63, 29, 0.16);
+}
+
+.remote-card strong {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.3rem;
+}

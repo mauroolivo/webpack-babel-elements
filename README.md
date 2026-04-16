@@ -20,6 +20,7 @@ Examples:
 npm ci --prefix chapters/ch01-foundation
 npm ci --prefix chapters/ch06-dev-workflow
 npm ci --prefix chapters/ch07-quality-analysis
+npm ci --prefix chapters/ch08-federation-wasm
 ```
 
 Then run that chapter from the same root context if you want:
@@ -28,6 +29,7 @@ Then run that chapter from the same root context if you want:
 npm run --prefix chapters/ch01-foundation build
 npm run --prefix chapters/ch06-dev-workflow dev
 npm run --prefix chapters/ch07-quality-analysis analyze
+npm run --prefix chapters/ch08-federation-wasm build:host
 ```
 
 If a chapter does not yet have a lockfile, run `npm install` once inside that chapter folder and commit the generated lockfile before relying on `npm ci`.

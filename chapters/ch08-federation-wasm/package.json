@@ -1,0 +1,29 @@
+{
+  "name": "ch08-federation-wasm",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Chapter 8 of the Webpack + Babel learning path.",
+  "scripts": {
+    "dev:remote": "webpack serve --config remote/webpack.config.js --mode development",
+    "dev:host": "webpack serve --config host/webpack.config.js --mode development",
+    "build:remote": "webpack --config remote/webpack.config.js --mode production",
+    "build:host": "webpack --config host/webpack.config.js --mode production",
+    "build": "npm run build:remote && npm run build:host",
+    "config:test": "webpack configtest host/webpack.config.js && webpack configtest remote/webpack.config.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.29.0",
+    "@babel/preset-env": "^7.29.2",
+    "@babel/preset-typescript": "^7.28.5",
+    "babel-loader": "^10.1.1",
+    "css-loader": "^7.1.4",
+    "html-webpack-plugin": "^5.6.6",
+    "style-loader": "^4.0.0",
+    "typescript": "^6.0.2",
+    "webpack": "^5.106.1",
+    "webpack-cli": "^7.0.2",
+    "webpack-dev-server": "^5.2.3"
+  }
+}
