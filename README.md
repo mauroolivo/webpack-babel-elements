@@ -46,3 +46,14 @@ Each chapter has its own `package.json`, so installed dependencies belong to the
 4. Read the chapter-specific README for the tutorial context.
 
 This keeps the repository closer to a set of focused mini projects than to a single monorepo application.
+
+## Further Documentation
+
+- [Chapter 1 walkthrough](docs/ch01-foundation.md)
+- [Chapter 2 walkthrough](docs/ch02-loaders-assets.md)
+- [Chapter 3 walkthrough](docs/ch03-plugins-env.md)
+- [Chapter 4 walkthrough](docs/ch04-optimization.md)
+- [Chapter 5 walkthrough](docs/ch05-code-splitting.md)
+- [Chapter 6 walkthrough](docs/ch06-dev-workflow.md)
+- [Chapter 7 walkthrough](docs/ch07-quality-analysis.md)
+- [Chapter 8 walkthrough](docs/ch08-federation-wasm.md)
